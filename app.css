@@ -88,6 +88,13 @@ p{
 .custom-control-label{
     color:black ;
 }
+.order-overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+}
 .order{
     background-attachment: fixed;
     background-image: url("pizza-4952509.jpg");
@@ -98,10 +105,7 @@ p{
     padding-top: 4%;
     padding-bottom: 4%;
   }
-.order-overlay{
-    background-color: rgba(0, 0, 0, 0.3);
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-bottom: 20px;
-    padding-left: 6%;
-}
+  th{
+      color: #f3f0ec;
+  }
+
