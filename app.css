@@ -70,7 +70,7 @@ p{
     font-size: 20px;
 }
 .container{
-    background-image: url("pizza-4952509.jpg");
+    background-image: url("");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,6 +78,9 @@ p{
     padding-bottom: 20px;
     position: relative;
    overflow-x: hidden;
+}
+.row{
+    color: #f3f0ec;
 }
 .card-text , .card-title{
     color: black;
@@ -97,7 +100,7 @@ p{
 }
 .order{
     background-attachment: fixed;
-    background-image: url("pizza-4952509.jpg");
+    background-image: url("/images/pizza-4952509.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +108,7 @@ p{
     padding-top: 4%;
     padding-bottom: 4%;
   }
-  th{
+  th ,.custom-control-label{
       color: #f3f0ec;
   }
 
