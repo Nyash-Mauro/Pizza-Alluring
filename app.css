@@ -1,7 +1,8 @@
 body {
     margin: 0px;
-    background-color:rgb(236, 232, 232);
-
+    background-color:#f0a53d;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Navbar code starts here  */
@@ -11,7 +12,8 @@ body {
     flex-direction: row;
     height: 62px;
     box-shadow: 0 1px 22px 0 rgba(0, 0, 0, 0.5);
-    background-color: #e21818;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .side-nav {
@@ -67,6 +69,6 @@ body {
 p{
     font-size: 20px;
 }
-#head{
-
+.card-text , .card-title{
+    color: black;
 }
