@@ -48,5 +48,9 @@ if((psize == "0") && (pcrust == "0")){
     $("div.choise").hide();
     alert("Please select pizza size and crust"); 
   }
-  else{}
+  else{
+      $("button.submit").hide();
+      $("#information").hide();
+      $("div.choice").slideDown(1200);
+  }
     
