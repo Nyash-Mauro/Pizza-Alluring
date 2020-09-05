@@ -1,3 +1,67 @@
-body{
-    color: red;
+body {
+    margin: 0px;
+
+}
+
+/* Navbar code starts here  */
+.top-nav {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    height: 62px;
+    box-shadow: 0 1px 22px 0 rgba(0, 0, 0, 0.5);
+    background-color: #e21818;
+}
+
+.side-nav {
+    align-self: flex-start;
+    flex-basis: 36%;
+}
+
+.logo {
+    width: 162px;
+    height: 50px;
+    object-fit: contain;
+    background-color: #8e9947;
+    margin: 5px;
+}
+
+.nav-header {
+    font-size: 30px;
+    font-weight: bold;
+    color:  black;
+    font-family: 'Bitter', serif;
+}
+
+.center-nav {
+   flex-basis: 35%;
+}
+
+.end-nav { 
+    flex-basis: 27%;
+    display: flex;
+    flex-direction: row;
+    margin: 0; 
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    height: 100%;
+}
+
+
+
+.list li {
+    padding: 1em;
 }
