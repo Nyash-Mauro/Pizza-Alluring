@@ -13,7 +13,7 @@ body {
     height: 62px;
     box-shadow: 0 1px 22px 0 rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    background-color: white;
+    background-color: #f3f0ec;
 }
 
 .side-nav {
@@ -69,6 +69,39 @@ body {
 p{
     font-size: 20px;
 }
+.container{
+    background-image: url("pizza-4952509.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    padding-bottom: 20px;
+    position: relative;
+   overflow-x: hidden;
+}
 .card-text , .card-title{
     color: black;
+}
+.card-body{
+    background-color: #f3f0ec;
+}
+.custom-control-label{
+    color:black ;
+}
+.order{
+    background-attachment: fixed;
+    background-image: url("pizza-4952509.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+.order-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    padding-left: 6%;
 }
