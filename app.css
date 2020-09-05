@@ -1,8 +1,10 @@
-body {
+html,body {
     margin: 0px;
     background-color:#f0a53d;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Navbar code starts here  */
@@ -19,14 +21,6 @@ body {
 .side-nav {
     align-self: flex-start;
     flex-basis: 36%;
-}
-
-.logo {
-    width: 162px;
-    height: 50px;
-    object-fit: contain;
-    background-color: #8e9947;
-    margin: 5px;
 }
 
 .nav-header {
