@@ -53,4 +53,37 @@ if((psize == "0") && (pcrust == "0")){
       $("#information").hide();
       $("div.choice").slideDown(1200);
   }
-    
+  switch(pcrust){
+    case "0":
+      crust_price = 0;
+    break;
+    case "Neapolitan-Crust":
+      crust_price = 180;
+    break;
+    case "Silician-Style":
+      crust_price = 200;
+    break;
+    case "NY-style":
+      crust_price = 150;
+    break;
+    case "Chicago-Deep-dish":
+        crust_price = 250;
+      break;
+    default:
+      console.log("No price"); 
+  }
+  let topping_value = ptopping.length*50;
+  console.log("toppings value"+topping_value);
+
+  if((psize == "0") && (pcrust == "0")){
+    console.log("nothing selected");
+    $("button.proceed").show();
+    $("#information").show();
+    $("div.choise").hide();
+    alert("Please select pizza size and crust"); 
+  }
+  else{
+    $("button.sybmit").hide();
+    $("#information").hide();
+    $("div.choice").slideDown(1200);
+  } 
