@@ -154,3 +154,45 @@ if((psize == "0") && (pcrust == "0")){
 
   checkoutTotal = checkoutTotal + total;
   console.log(checkoutTotal);
+  var newOrder = new Getpizza(pname, psize, pcrust,ptopping,total);
+  $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+  console.log(newOrder);
+
+
+  //checkout button
+  $("button.deliver").click(function(){
+    $(".pizzatable").hide();
+    $(".choice h2").hide();
+    $(".delivery").slideDown(1200);
+    $("#addedprice").hide();
+    $("button.deliver").hide();
+    $("#pizzatotal").hide();
+    let deliceryamount= checkoutTotal+300;
+    console.log("You will pay sh. "+deliceryamount+" on delivery");
+    $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+  });
+  $("button#final-order").click(function(event){
+    event.preventDefault();
+
+    $("#pizzatotal").hide();
+    $(".delivery").hide();
+    $("button#final-order").hide();
+    let deliceryamount= checkoutTotal+150;
+    console.log("Final Bill is: "+deliceryamount);
+    let person = $("input#name").val();
+    let phone = $("input#phone").val();
+    let location = $("input#location").val();
+
+    if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+
+      $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+      $("#totalbill").hide();
+      $("#finallmessage").slideDown(1200);
+    }
+    else {
+      alert("Please fill in the details for delivery!");
+      $(".delivery").show();
+      $("button#final-order").show();
+    }
+  });
+  event.preventDefault();
