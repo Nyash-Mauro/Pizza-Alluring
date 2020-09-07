@@ -17,6 +17,8 @@
     </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     </script>   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/app.css">
 </head>
@@ -307,9 +309,9 @@
                               <p id="addedprice">Delivery will cost sh. 300</p>
                               <p id="finallmessage"></p>
                             </div>
-                            <button class="btn btn deliver addPizza">Add Pizza</button>
-                            <button class="btn btn deliver" id="checkout">Checkout</button>
-                            <button class="btn btn deliver">Home delivery?</button>
+                            <button class="btn btn deliver addPizza" onclick="">Add Pizza</button>
+                            <button class="btn btn deliver" id="checkout" onclick="">Checkout</button>
+                            <button class="btn btn deliver" onclick="">Home delivery?</button>
                           </div>
                           <br>
                           <div class="delivery">
@@ -318,7 +320,7 @@
                                   <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                                   <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
                                   <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                                  <button class="btn btn" id="final-order">Place Order</button>
+                                  <button class="btn btn" id="final-order" onclick="deliveryamount()">Place Order</button>
                                 </div>
                               </form>
                           </div>
@@ -334,31 +336,23 @@
         <div class="controls-top"> 
             <h2 class="text-center font-weight-bold">Contact Us</h2>
           </div>
-        <div class="row" id="contactdetails">
+        < class="row" id="contactdetails">
           <div class="col-md-1">
              
           </div>
-          <div class="col-md-3 text-justify">
+          <div class="col-md-5 text-justify">
             <h2>Location</h2>
             <p>Pizza Alluring</p>
             <p>TRM Mall | Along Thika Road</p>
             <p>00251, Kasarani</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-5">
             <h2>Customer Care</h2>
              <p>mauricee4690@gmail.com</p>
              <p>Tell: 02200346476</p> 
              <p>Phone: +254700427697</p>
           </div>
-          <div class="col-md-4">
-              <div class="mapouter">
-                <div class="gmap_canvas">
-<!--                   <iframe width="350" height="180" id="gmap_canvas" src="https://www.google.com/maps/place/TRM+-+Thika+Road+Mall/@-1.2198852,36.887019,17z/data=!3m1!4b1!4m5!3m4!1s0x182f3fc955678a67:0x2c30e07746ac972a!8m2!3d-1.2198906!4d36.889213" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                  </iframe> -->
-                </div>
-                <style>.mapouter{position:relative;text-align:right;height:180px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:350px;}</style>
-              </div>
-          </div>
+
           <div class="col-md-1"></div>
         </div>
         <div class="row">
@@ -367,9 +361,7 @@
           </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -15,11 +15,11 @@ $("button.submit").click(function(event){
     let psize = $("#size option:selected").val();
     let pcrust = $("#crust option:selected").val();
     let ptopping = [];
-    ptopping.push($(this).val());
+    pTopping.push($(this).val());
 });
 console.log(ptopping.join(","));
 
-switch (psize) {
+switch (pize) {
     case "0":
         price =0
         break;
@@ -45,7 +45,7 @@ if((psize == "0") && (pcrust == "0")){
     console.log("nothing selected");
     $("button.proceed").show();
     $("#information").show();
-    $("div.choise").hide();
+    $("div.choice").hide();
     alert("Please select pizza size and crust"); 
   }
   else{
@@ -72,10 +72,10 @@ if((psize == "0") && (pcrust == "0")){
     default:
       console.log("No price"); 
   }
-  let topping_value = ptopping.length*50;
-  console.log("toppings value"+topping_value);
+/*   let topping_value = ptopping.length*50;
+  console.log("toppings value"+topping_value); */
 
-  if((psize == "0") && (pcrust == "0")){
+  if((pSize == "0") && (pCrust == "0")){
     console.log("nothing selected");
     $("button.proceed").show();
     $("#information").show();
@@ -155,7 +155,7 @@ if((psize == "0") && (pcrust == "0")){
   checkoutTotal = checkoutTotal + total;
   console.log(checkoutTotal);
   var newOrder = new Getpizza(pname, psize, pcrust,ptopping,total);
-  $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+  /* $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>'); */
   console.log(newOrder);
 
 
@@ -167,9 +167,9 @@ if((psize == "0") && (pcrust == "0")){
     $("#addedprice").hide();
     $("button.deliver").hide();
     $("#pizzatotal").hide();
-    let deliceryamount= checkoutTotal+300;
-    console.log("You will pay sh. "+deliceryamount+" on delivery");
-    $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+    let deliveryamount= checkoutTotal+300;
+    console.log("You will pay sh. "+deliveryamount+" on delivery");
+    $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
   });
   $("button#final-order").click(function(event){
     event.preventDefault();
@@ -177,15 +177,15 @@ if((psize == "0") && (pcrust == "0")){
     $("#pizzatotal").hide();
     $(".delivery").hide();
     $("button#final-order").hide();
-    let deliceryamount= checkoutTotal+150;
-    console.log("Final Bill is: "+deliceryamount);
+    let deliveryamount= checkoutTotal+300;
+    console.log("Final Bill is: "+deliveryamount);
     let person = $("input#name").val();
     let phone = $("input#phone").val();
     let location = $("input#location").val();
 
     if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
 
-      $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+      $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
       $("#totalbill").hide();
       $("#finallmessage").slideDown(1200);
     }
