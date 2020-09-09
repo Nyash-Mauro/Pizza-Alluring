@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PIZZA ALLURRING</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous
+    <title>PIZZA</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" type="images/jpg" href="images/pizza.jpg">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="app.css">
 </head>
@@ -20,22 +17,24 @@
 <body>
     <div class="container-fluid">
         <div id="order">
-            <a href="index.html"><button type="submit" form="form1" value="Submit" id="btn2"> <i class="fa fa-homearia-hidden="true"></i>&nbsp;TO OUR HOME PAGE </button></a>
-            <h1 class="head">WELCOME TO OUR ORDER PAGES</h1>
+            <a href="index.html"><button type="submit" form="form1" value="Submit" id="btn2"> <i class="fa fa-homearia-hidden="true"></i>&nbsp;TO HOME PAGE </button></a>
+            <h1 class="head">WELCOME TO THE BEST FOODS AT PIZZA ALLURING</h1>
         </div>
+        <h3 class="two">ORDER HERE</h3>
                     <form class="form">
                         <div class="pause2">
                             <h3 class="two">ORDER HERE</h3>
-                                <label for="size"></label>
-                                <select class="browser-default custom-select" id="crust">
+                                <label for="size">Size</label>
+                                <select class="browser-default custom-select" id="size">
                                     <option value="">Choose your Size</option>
                                     <option value="1500">Large =ksh 2000</option>
                                     <option value="1000">Medium =ksh 950</option>
                                     <option value="500">Small= ksh650</option>
                                 </select><br>
                             </div>
-                            <div class="pause1" id="input-field">
-                                <label for="crust"></label>
+                            <div class="pause1">
+
+                                <label for="crust">Crust</label>
                                 <select class="browser-default custom-select" id="crust">
                                     <option value="">Choose Your Favorite Crust</option>
                                     <option value="150">Crispy =ksh 150</option>
@@ -43,17 +42,17 @@
                                     <option value="70">Gluten-free =ksh 70</option>
                                 </select><br>
                             </div>
-                            <div class="pause" id="crust">
-                                <label for="toppings" name="toppings" ></label>
-                                <select class="browser-default custom-select" id="crust">
+                            <div class="pause">
+                                <label for="toppings" name="toppings" >Toppings</label>
+                                <select class="browser-default custom-select" id="toppings">
                                     <option value="">Choose your favorite Topping</option>
                                     <option value="60">Cheese ksh 100</option>
                                     <option value="60">pepperoni =ksh 60</option>
                                     <option value="60">Tomatoes =ksh60</option>
                                 </select>
                             </div>
-                            <div class="col-md-3" id="crust">
-                                <label for="quantity" class="quantity"></label>
+                            <div class="col-md-3">
+                                <label for="quantity" class="quantity">Quantity</label>
                                 <input class="form-control" type="text" name="pizza" id="quan" placeholder="0" max=""
                                     min="0">
                             </div>
@@ -71,10 +70,9 @@
 
     </div>
     </div>
-    <br>
     <div class="container-fluid" id="contact">
         <div class="controls-top ">
-          <h2 class="head">Contact Us</h2>
+          <h2>Contact Us</h2>
         </div>
         <div class="row" id="contactdetails">
           <div class="col-md-4">
