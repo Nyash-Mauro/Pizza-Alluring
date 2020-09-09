@@ -22,7 +22,7 @@ function getQuantity() {
 
 function getTotalAmount() {
   var totalAmount = (getSizeValue() + getCrust() + getToppings()) * getQuantity();
-  alert("You have Ordered" + getQuantity("") + " pizza." + "" + " The Total Amount is kshs " + totalAmount + "" + " Thank you for your order welcome again.");
+  alert("You have Ordered " + getQuantity("") + " pizza." + "" + " The Total Amount is kshs " + totalAmount + "" + " Thank you for your order welcome again.");
   prompt("enter your location");
   alert("You delivery fee is 300/=");
   alert("You order will be delivered shortly");
