@@ -16,9 +16,9 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3 H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     </script>   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Alluring</title>
+<link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -51,7 +51,7 @@
               <br>
               <br>
               <br>
-              <a class="btn btn-outline-danger" href="#order" role="button" id="join">Order Now</a>
+              <a class="btn btn-outline-danger" href="/app.html" role="button" id="join">Order Now</a>
             </div>
           </div>
         </div>
@@ -199,129 +199,7 @@
       <br>
       <br>
       <br>
-      <!-- button of selection -->
-      <section id="order">
-          <div class="container-fluid order" id="order">
-              <div class="order-overlay">
-                  <div class="controls-top text-center" id="Order-now">
-                      <h2 class="font-weight-bold">Order Here</h2>
-                  </div>
-                  <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
-                  <div class="row">
-                      <div class="col-sm-5">
-                          <form action="">
-                              <label for="select">Select Your preferred Flavor</label>
-                              <select class="browser-default custom-select custom-select-md mb-3 name">
-                                  <!-- <option selected value="choose">Choose your flavor</option> -->
-                                  <option value="Detroit Pizza">Detroit Pizza</option>
-                                  <option value="Greek Pizza">Greek Pizza</option>
-                                  <option value="Dessert Pizza">Dessert Pizza</option>
-                                  <option value="Chicago Deep dish Pizza">Chicago Deep dish Pizza</option>
-                                  <option value="Sunchoke Pizza">Sunchoke Pizza</option>
-                                  <option value="Neapolitan Pizza">Neapolitan Pizza</option>
-                                  <option value="New York style Pizza">New York style Pizza</option>
-                                  <option value="St Louis Pizza">St Louis Pizza</option>
-                                  <option value="Bagel Pizza">Bagel Pizza</option>
-                              </select>
-                              <label for="select">Select Size</label>
-                              <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                                  <option selected value="0">Select size here</option>
-                                  <option value="large">Large -- sh. 1500</option>
-                                  <option value="medium">Medium -- sh. 800</option>
-                                  <option value="small">Small -- sh. 600</option>
-                              </select>
-                              <label for="crust">Choose your favorite Crust!</label>
-                              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                                  <option selected value="0">Select your preferred crust!</option>
-                                  <option value="Crispy">Silician-Style -- sh. 200</option>
-                                  <option value="Stuffed">NY-style -- sh. 150</option>
-                                  <option value="Gluten-free">Neapolitan-Crust-- sh. 180</option>
-                                  <option value="Gluten-free">Chicago-Deep-dish-- sh. 250</option>
-      
-                              </select>
-                              <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
-                              <div class="custom-control custom-checkbox custom-control-inline">
-                                  <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage"
-                                      name="toppings">
-                                  <label class="custom-control-label" for="Sausage">Sausage</label>
-                              </div>
-                              <div class="custom-control custom-checkbox custom-control-inline">
-                                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
-                                      name="toppings">
-                                  <label class="custom-control-label" for="Bacon">Bacon</label>
-                              </div>
-      
-                              <div class="custom-control custom-checkbox custom-control-inline">
-                                  <input type="checkbox" class="custom-control-input" id="Extra-cheese" value="Extra-cheese"
-                                      name="toppings">
-                                  <label class="custom-control-label" for="Extra-cheese">Extra Cheese</label>
-                              </div>
-      
-                              <div class="custom-control custom-checkbox custom-control-inline">
-                                  <input type="checkbox" class="custom-control-input" id="Pepperoni" value="Pepperoni"
-                                      name="toppings">
-                                  <label class="custom-control-label" for="Pepperoni">Pepperoni</label>
-                              </div>
-                              <br><br>
-                              <button type="button" class="btn btn btn-outline-danger">Submit</button>
-                      </div>
-                      <div class="col-sm-7">
-                          <div id="information">
-                            <p>Your order will be processed and delivered within one hour of placing.</p>
-                            <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-                            <p>Incase of any comment or complaint, Please reach out to us as fast as possible.</p>
-                            <p id="regards">Regards, Management</p>
-                          </div>
-                          <div class="choice">
-                            <h2>Your Order is:</h2>
-                            <div id="your-orders">
-                              <table class="table table-sm  pizzatable">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Size</th>
-                                    <th scope="col">Crust</th>
-                                    <th scope="col">Topping</th>
-                                    <th scope="col">Total</th>
-                                  </tr>
-                                </thead>
-                                <tbody id="ordersmade">
-                                  <tr>
-                                    <td id="pizzaname"></td>
-                                    <td id="pizzasize"></td>
-                                    <td id="pizzacrust"></td>
-                                    <td id="pizzatopping"></td>
-                                    <td id="totals"></td>
-                                  </tr>                  
-                                </tbody>
-                              </table>
-                              <p id="pizzatotal"></p>
-                              <p id="totalbill"></p> 
-                              <p id="addedprice">Delivery will cost sh. 300</p>
-                              <p id="finallmessage"></p>
-                            </div>
-                            <a class="btn btn-outline-danger" role="button" id="addPizza">Add Pizza</a>
-                            <a class="btn btn-outline-danger" role="button" id="checkout">Check Out</a>
-                            <a class="btn btn-outline-danger" role="button" id="deliver">Home Delivery</a>
-                          </div>
-                          <br>
-                          <div class="delivery">
-                              <form action="">
-                                <div class="form-group">
-                                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                                  <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
-                                  <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                                  <button class="btn btn btn-outline-danger" id="final-order" onclick="deliveryamount()">Place Order</button>
-                                </div>
-                              </form>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                </form>
-                <br>
-                <br>
+
       </section>
           <div class="container-fluid" id="contact">
             <div class="controls-top ">
